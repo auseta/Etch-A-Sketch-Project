@@ -1,0 +1,81 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  font-family: 'Silkscreen', cursive;
+}
+
+body {
+  background: url("./images/bg-image.gif");
+  background-position: left;
+  background-size: cover;
+}
+
+h1 {
+  color: yellow;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+  width: 600px;
+}
+
+.buttons-container > button {
+  padding: 5px 15px;
+  background-color: #ffff00ba;
+  border: 3px solid black;
+}
+
+.buttons-container > button:hover {
+  cursor: pointer;
+
+}
+
+.colors-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.colors-container > button {
+  padding: 5px 15px;
+}
+
+/* Grid options */
+
+.grid-container {
+  margin-top: 25px;
+  display: grid;
+  height: 600px;
+  width: 600px;
+  background-color: #f0f8ffad;
+}
+
+.option-16 {
+  grid-template-columns: repeat(16, auto);
+  grid-template-rows:  repeat(16, auto);
+}
+
+.option-64 {
+  grid-template-columns: repeat(64, auto);
+  grid-template-rows:  repeat(64, auto);
+}
+
+.option-32 {
+  grid-template-columns: repeat(32, auto);
+  grid-template-rows: repeat(32, auto);
+}
