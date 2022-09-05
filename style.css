@@ -13,16 +13,21 @@ body {
   background: url("./images/bg-image.gif");
   background-position: left;
   background-size: cover;
+  background-color: sien;
 }
 
 h1 {
   color: yellow;
 }
 
+p {
+  background-color: #f0f8ffad;
+}
+
 .container {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -42,6 +47,7 @@ h1 {
 
 .buttons-container > button:hover {
   cursor: pointer;
+  background-color: gold;
 
 }
 
@@ -53,6 +59,12 @@ h1 {
 
 .colors-container > button {
   padding: 5px 15px;
+  background-color: #ffff00ba;
+}
+
+.colors-container > button:hover {
+  background-color: gold;
+  cursor: pointer;
 }
 
 /* Grid options */
@@ -78,4 +90,11 @@ h1 {
 .option-32 {
   grid-template-columns: repeat(32, auto);
   grid-template-rows: repeat(32, auto);
+}
+
+.footer {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 15px 25px;
+  background-color: #f0f8ffad;
 }
