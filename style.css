@@ -11,7 +11,6 @@ html {
 
 body {
   background: url("./images/bg-image.gif");
-  background-position: left;
   background-size: cover;
   background-color: sien;
 }
